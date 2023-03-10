@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: #eee;
+}
+.project {
+  margin: 50px auto 30px;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}
+.project .top {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+@media (min-width: 375px) {
+  .project .top {
+    width: 400px;
+  }
+}
+.project .top > p:first-child {
+  font-size: 21px;
+  font-weight: 300;
+}
+.project .top > h2 {
+  font-size: 21px;
+}
+@media (min-width: 375px) {
+  .project .top > p:first-child,
+  .project .top > h2 {
+    font-size: 30px;
+  }
+}
+.project .top > p:last-child {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #777;
+}
+
+.project .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 375px) {
+  .project .bottom {
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    gap: 30px;
+  }
+}
+.project .bottom .middle {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 375px) {
+  .project .bottom .card:first-child {
+    width: calc(80% / 3);
+  }
+  .project .bottom .middle {
+    width: calc(80% / 3);
+  }
+  .project .bottom .card:last-child {
+    width: calc(80% / 3);
+  }
+}
+.card {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border-top: 2px solid transparent;
+  position: relative;
+  box-shadow: 2px 2px 20px -6px rgb(119 119 119 / 50%),
+    -2px 2px 20px -6px rgb(119 119 119 / 50%);
+}
+@media (min-width: 375px) {
+  .project .bottom .middle .card {
+    width: 100%;
+  }
+}
+.project .bottom .card:first-child {
+  border-color: hsl(0, 78%, 62%);
+}
+.project .bottom .middle .card:first-child {
+  border-color: hsl(180, 62%, 55%);
+}
+.project .bottom .middle .card:first-child {
+  border-color: hsl(34, 97%, 64%);
+}
+.project .bottom .card:last-child {
+  border-color: hsl(212, 86%, 64%);
+}
+.card .text {
+  text-align: left;
+}
+.card .text h3 {
+  font-size: 20px;
+}
+.card .text p {
+  font-size: 13px;
+  margin-top: 20px;
+  line-height: 1.4;
+  color: #777;
+}
+.card .image {
+  text-align: right;
+  margin-top: 30px;
+}
+.card .image img {
+  width: 40px;
+  position: relative;
+  bottom: -12px;
+}
