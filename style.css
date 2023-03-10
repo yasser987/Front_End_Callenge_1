@@ -15,10 +15,11 @@ body {
   padding: 30px;
   text-align: center;
 }
+
 .project .top {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 @media (min-width: 375px) {
   .project .top {
@@ -31,6 +32,7 @@ body {
 }
 .project .top > h2 {
   font-size: 21px;
+  margin: 10px 0;
 }
 @media (min-width: 375px) {
   .project .top > p:first-child,
@@ -45,33 +47,22 @@ body {
 }
 
 .project .bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
+  width: 100%;
 }
 @media (min-width: 375px) {
   .project .bottom {
-    flex-direction: row;
-    justify-content: center;
-    width: 90%;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
     gap: 30px;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 .project .bottom .middle {
   display: flex;
   flex-direction: column;
-}
-@media (min-width: 375px) {
-  .project .bottom .card:first-child {
-    width: calc(90% / 3);
-  }
-  .project .bottom .middle {
-    width: calc(90% / 3);
-  }
-  .project .bottom .card:last-child {
-    width: calc(90% / 3);
-  }
 }
 .card {
   width: 100%;
@@ -83,6 +74,7 @@ body {
   position: relative;
   box-shadow: 2px 2px 20px -6px rgb(119 119 119 / 50%),
     -2px 2px 20px -6px rgb(119 119 119 / 50%);
+  height: 200px;
 }
 @media (min-width: 375px) {
   .project .bottom .middle .card {
@@ -106,19 +98,18 @@ body {
 }
 .card .text h3 {
   font-size: 20px;
+  margin: 10px 0;
 }
 .card .text p {
   font-size: 13px;
-  margin-top: 20px;
   line-height: 1.4;
   color: #777;
 }
 .card .image {
-  text-align: right;
-  margin-top: 30px;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
 }
 .card .image img {
   width: 40px;
-  position: relative;
-  bottom: -12px;
 }
