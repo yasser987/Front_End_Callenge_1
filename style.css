@@ -7,7 +7,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
-  background-color: #eee;
+  background-color: #fdfdfd;
 }
 .project {
   margin: 50px auto 30px;
@@ -19,7 +19,7 @@ body {
 .project .top {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 @media (min-width: 375px) {
   .project .top {
@@ -32,12 +32,12 @@ body {
 }
 .project .top > h2 {
   font-size: 21px;
-  margin: 10px 0;
+  margin: 10px 0 15px;
 }
 @media (min-width: 375px) {
   .project .top > p:first-child,
   .project .top > h2 {
-    font-size: 30px;
+    font-size: 31px;
   }
 }
 .project .top > p:last-child {
@@ -70,11 +70,11 @@ body {
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 6px;
-  border-top: 2px solid transparent;
+  border-top: 3px solid transparent;
   position: relative;
   box-shadow: 2px 2px 20px -6px rgb(119 119 119 / 50%),
     -2px 2px 20px -6px rgb(119 119 119 / 50%);
-  height: 200px;
+  height: 230px;
 }
 @media (min-width: 375px) {
   .project .bottom .middle .card {
@@ -82,12 +82,12 @@ body {
   }
 }
 .project .bottom .card:first-child {
-  border-color: hsl(0, 78%, 62%);
-}
-.project .bottom .middle .card:first-child {
   border-color: hsl(180, 62%, 55%);
 }
 .project .bottom .middle .card:first-child {
+  border-color: hsl(0, 78%, 62%);
+}
+.project .bottom .middle .card:last-child {
   border-color: hsl(34, 97%, 64%);
 }
 .project .bottom .card:last-child {
